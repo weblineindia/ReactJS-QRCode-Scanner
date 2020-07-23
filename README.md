@@ -87,10 +87,8 @@ class Test extends Component {
 | --- | --- | --- | --- |
 | delay | number | 500  |The delay between scans in milliseconds. To disable the interval pass in `false`. |
 | facingMode | string |   |Specify which camera direction should be used (if available). Options: `front` and `rear`. |
-| legacyMode | boolean |false | If the device does not allow camera access (e.g. IOS Browsers, Safari) you can enable legacyMode to allow the user to take a picture (On a mobile device) or use an existing one. To trigger the image dialog just call the method `openImageDialog` from the parent component. **Warning** You must call the method from a user action (eg. click event on some element).
- |
-| maxImageSize | number | 1500   |  If `legacyMode` is active then the image will be downscaled to the given value while keepings its aspect ratio. Allowing larger images will increase the accuracy but it will also slow down the processing time.
- |
+| legacyMode | boolean |false | If the device does not allow camera access (e.g. IOS Browsers, Safari) you can enable legacyMode to allow the user to take a picture (On a mobile device) or use an existing one. To trigger the image dialog just call the method `openImageDialog` from the parent component. **Warning** You must call the method from a user action (eg. click event on some element).|
+| maxImageSize | number | 1500   |  If `legacyMode` is active then the image will be downscaled to the given value while keepings its aspect ratio. Allowing larger images will increase the accuracy but it will also slow down the processing time.|
 | style | object |   | Styling for the preview element. This will be a `video` or an `img` when `legacymode` is `true`. **Warning** The preview will keep its aspect ratio, to disable this set the CSS property [objectFit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) to `fill`.
  |
 | className | string |   | ClassName for the container element.  |
