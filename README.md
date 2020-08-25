@@ -78,6 +78,15 @@ class Test extends Component {
     )
   }
 }
+
+```
+For Next.js Use dynamic import instead of usual import.
+
+```js
+
+import dynamic from 'next/dynamic'
+const QrReader = dynamic(() => import('react-weblineindia-qrcode-scanner').then((a) => a.QrReader), {ssr: false});
+
 ```
 
 
